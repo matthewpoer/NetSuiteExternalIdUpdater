@@ -5,7 +5,8 @@ Leverages the very helpful  [ryanwinchester/netsuite-php](https://github.com/rya
 
 ## Setup and Run
 * Download/clone to local machine
-* Create a config file by copying the example (`cp config_default.php config.php`) or creating a new one. Ensure config specifies all parameter will values relevant to your NetSuite instances. 
+* Create a config file by copying the example (`cp config_default.php config.php`) or creating a new one. Ensure config specifies all parameter will values relevant to your NetSuite instances.
+ * Pay special attention to the **NS_OBJECT** param. Use the list in [RecordType list NetSuite documentation](http://www.netsuite.com/help/helpcenter/en_US/srbrowser/Browser2015_1/schema/enum/recordtype.html) since the names are not intuitive.
 * Run `composer install` to fetch the ryanwinchester/netsuite-php library
 * Run the script, `php -f NetSuiteExternalIdUpdater.php`
 

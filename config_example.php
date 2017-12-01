@@ -1,5 +1,11 @@
 <?php
 
+// define the type of the Customer record you want to adjust
+// e.g. customer, nonInventorySaleItem
+// full list can be found in NetSuite docs:
+// http://www.netsuite.com/help/helpcenter/en_US/srbrowser/Browser2015_1/schema/enum/recordtype.html
+define('NS_OBJECT', 'customer');
+
 // define the ID of the Customer record you want to adjust
 define('ENTITY_ID', '12345');
 

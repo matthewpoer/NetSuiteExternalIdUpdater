@@ -25,7 +25,7 @@ try {
   $request = new GetRequest();
   $request->baseRef = new RecordRef();
   $request->baseRef->internalId = ENTITY_ID;
-  $request->baseRef->type = "customer";
+  $request->baseRef->type = NS_OBJECT;
   $response = $service->get($request);
 } catch (\Exception $e) {
   $e_message = $e->getMessage();
