@@ -65,6 +65,8 @@ unset($customer->dateCreated);
 unset($customer->lastModifiedDate);
 unset($customer->balance);
 unset($customer->depositBalance);
+unset($customer->overdueBalance);
+unset($customer->unbilledOrders);
 
 // attept the update
 try {
