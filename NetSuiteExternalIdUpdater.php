@@ -7,7 +7,7 @@ if(!file_exists('config.php')){
 require_once('config.php');
 if(!isset($config) || empty($config)) die('Did not define $config' . PHP_EOL);
 if(!defined('ENTITY_ID') || empty(ENTITY_ID)) die('Did not define ENTITY_ID' . PHP_EOL);
-if(!defined('OldExternalId') || empty(OldExternalId)) die('Did not define OldExternalId' . PHP_EOL);
+if(!defined('OldExternalId')) die('Did not define OldExternalId' . PHP_EOL);
 if(!defined('NewExternalId') || empty(NewExternalId)) die('Did not define NewExternalId' . PHP_EOL);
 
 require_once('vendor/autoload.php');
@@ -67,6 +67,7 @@ unset($customer->balance);
 unset($customer->depositBalance);
 unset($customer->overdueBalance);
 unset($customer->unbilledOrders);
+unset($customer->defaultAddress);
 
 // attept the update
 try {
