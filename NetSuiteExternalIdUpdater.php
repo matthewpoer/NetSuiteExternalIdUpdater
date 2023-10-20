@@ -68,8 +68,15 @@ unset($customer->depositBalance);
 unset($customer->overdueBalance);
 unset($customer->unbilledOrders);
 unset($customer->defaultAddress);
+unset($customer->currencyList->currency[0]->balance);
+unset($customer->currencyList->currency[0]->depositBalance);
+unset($customer->currencyList->currency[0]->overdueBalance);
+unset($customer->currencyList->currency[0]->unbilledOrders);
 
-// attept the update
+// var_dump($customer->currencyList->currency[0]);
+// die();
+
+// attempt the update
 try {
   $request = new UpdateRequest();
   $request->record = $customer;

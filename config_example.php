@@ -18,8 +18,11 @@ define('NewExternalId', 'myCRM_456');
 // connection details
 $config = array(
    // required -------------------------------------
-   "endpoint" => "2016_2",
-   "host"     => "https://webservices.netsuite.com",
+   "endpoint" => "2019_1",
+
+   // https://github.com/ryanwinchester/netsuite-php#account-specific-data-center-urls
+   "host"     => "https://0000000.suitetalk.api.netsuite.com", // SUITETALK (SOAP AND REST WEB SERVICES)
+
    "email"    => "jDoe@netsuite.com",
    "password" => "mySecretPwd",
    "role"     => "3",
